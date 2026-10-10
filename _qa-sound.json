@@ -1,0 +1,14 @@
+[
+ {"viewport":[1280,800,1,false]},
+ {"media":[["prefers-reduced-motion","no-preference"]]},
+ {"init":"(()=>{const d=Object.getOwnPropertyDescriptor(ConvolverNode.prototype,'buffer');window.__cv=[];Object.defineProperty(ConvolverNode.prototype,'buffer',{get(){return d.get.call(this)},set(v){const t0=performance.now();d.set.call(this,v);window.__cv.push([Math.round(t0-(window.__g||0)),+(performance.now()-t0).toFixed(1),v&&+v.duration.toFixed(2)])},configurable:true});addEventListener('keydown',()=>{window.__g=window.__g||performance.now()},true);})()"},
+ {"wait":2500},
+ {"eval":"document.getElementById('pickup').focus(); 1"},
+ {"key":"Enter"},
+ {"wait":6000},
+ {"eval":"JSON.stringify({cv:window.__cv, st:__pl85.Sound.status(), hs:__pl85.Sound.inHandshake, err:__pl85.Sound.debugErr()})"},
+ {"eval":"(()=>{const S=__pl85.Sound;S.ping(0);S.degauss();S.pluck(60,0.9,0);S.setExchange(1);return S.debugErr()})()"},
+ {"wait":5000},
+ {"eval":"(()=>{const S=__pl85.Sound;S.setExchange(0);return JSON.stringify({cv:window.__cv, st:S.status(), v:S.debugVoices(), notes:S.debugNotes().slice(-6), err:S.debugErr(), b:Array.from(S.bands).slice(0,16).map(x=>+x.toFixed(2))})})()"},
+ {"shot":"desktop-playing"}
+]

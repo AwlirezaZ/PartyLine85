@@ -1,0 +1,12 @@
+[
+ {"viewport":[390,844,2,true]},
+ {"media":[["prefers-reduced-motion","no-preference"]]},
+ {"init":"(()=>{const d=Object.getOwnPropertyDescriptor(ConvolverNode.prototype,'buffer');window.__cv=[];window.__pk=[];Object.defineProperty(ConvolverNode.prototype,'buffer',{get(){return d.get.call(this)},set(v){const t0=performance.now();d.set.call(this,v);window.__cv.push([Math.round(t0-(window.__g||0)),+(performance.now()-t0).toFixed(1),v&&+v.duration.toFixed(2)])},configurable:true});addEventListener('keydown',()=>{window.__g=window.__g||performance.now()},true);})()"},
+ {"wait":2500},
+ {"eval":"document.getElementById('pickup').focus(); 1"},
+ {"key":"Enter"},
+ {"eval":"window.__pi=setInterval(()=>{__pl85.Sound.pluck(64,0.7,0);__pk.push(Math.round(performance.now()-__g))},400);setTimeout(()=>clearInterval(window.__pi),9000);1"},
+ {"wait":15000},
+ {"eval":"JSON.stringify({cv:window.__cv, lastPluck:__pk.slice(-3), st:__pl85.Sound.status(), coarse:matchMedia('(pointer: coarse)').matches, err:__pl85.Sound.debugErr()})"},
+ {"shot":"mobile-playing"}
+]

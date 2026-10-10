@@ -1,0 +1,13 @@
+[{"media":[["prefers-reduced-motion","no-preference"]]},
+ {"wait":3500},{"shot":"f01-desktop-pregesture"},
+ {"key":"Enter"},{"wait":4500},
+ {"eval":"({st: window.__pl85.Sound.status ? window.__pl85.Sound.status() : null, ui: document.querySelector('[role=status],#status') ? document.querySelector('[role=status],#status').textContent : null})"},
+ {"click":[640,330]},{"wait":700},{"shot":"f02-desktop-pluck"},
+ {"drag":[[600,250],[620,470],400]},{"wait":500},
+ {"type":"5550127"},{"wait":300},
+ {"key":"Escape"},{"wait":300},
+ {"key":"-"},{"wait":2500},{"shot":"f03-desktop-desk"},{"key":"+"},{"wait":1500},
+ {"viewport":[390,844,2,true]},{"wait":2500},{"shot":"f04-phone-playing"},
+ {"tap":[200,560]},{"wait":800},{"touchDrag":[[120,500],[300,520],350]},{"wait":800},
+ {"eval":"document.documentElement.scrollWidth"},
+ {"shot":"f05-phone-after-play"}]

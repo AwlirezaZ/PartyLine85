@@ -1,0 +1,18 @@
+[
+ {"media":[["prefers-reduced-motion","no-preference"]]},
+ {"viewport":[1280,800,1,false]},
+ {"wait":6000},
+ {"eval":"__pl85.App.gov(false); 1"},
+ {"shot":"d01-pregesture"},
+ {"click":[640,560]},
+ {"wait":5000},
+ {"eval":"(()=>{const C=__pl85.App.core,W=C.World,V=C.View,S=C.S,wd=W.wds[0];let n=0,h=0;const o=new Float32Array(3);for(let i=0;i<wd.N;i++)if(wd.u8[i*24+21]===4){n++;if(!V.xf(wd,i,o))h++;}return {state:W.state,sunRise:S.sunRise,sunPts:n,hidden:h,occ:!!wd.occ,refl:Array.from(S.refl).map(v=>+v.toFixed(3)),eye:Array.from(S.eye).map(v=>+v.toFixed(2))};})()"},
+ {"eval":"(()=>{const V=__pl85.App.core.View;let t=performance.now();for(let k=0;k<10;k++)V.ensureHash(1e6+k*10,true);const cold=(performance.now()-t)/10;t=performance.now();for(let k=0;k<60;k++)V.ensureHash(2e6+k);const warm=(performance.now()-t)/60;return {cold:+cold.toFixed(2),warm:+warm.toFixed(2)};})()"},
+ {"move":[640,300]},{"wait":400},{"move":[300,500]},{"wait":400},
+ {"eval":"(()=>{const V=__pl85.App.core.View;V.ensureHash(5e6,true);const r=[];for(const [x,y] of [[640,300],[640,250],[640,420],[300,500],[900,500]])r.push(V.nearest(x,y,28));return r;})()"},
+ {"shot":"d02-playing"},
+ {"eval":"__pl85.App.core.World.autoKnit(2); 1"},
+ {"wait":9000},
+ {"eval":"(()=>{const C=__pl85.App.core;return {ex:C.World.ex,pm:C.World.pm,refl:Array.from(C.S.refl).map(v=>+v.toFixed(3))};})()"},
+ {"shot":"d03-long"}
+]

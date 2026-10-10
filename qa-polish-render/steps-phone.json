@@ -1,0 +1,17 @@
+[
+ {"media":[["prefers-reduced-motion","no-preference"]]},
+ {"viewport":[390,844,2,true]},
+ {"wait":6000},
+ {"eval":"__pl85.App.gov(false); 1"},
+ {"shot":"p01-pregesture"},
+ {"tap":[195,600]},
+ {"wait":6000},
+ {"eval":"(()=>{const C=__pl85.App.core,W=C.World,V=C.View,S=C.S,wd=W.wds[0];let n=0,h=0;const o=new Float32Array(3);for(let i=0;i<wd.N;i++)if(wd.u8[i*24+21]===4){n++;if(!V.xf(wd,i,o))h++;}return {state:W.state,sunRise:+S.sunRise.toFixed(2),sunPts:n,hidden:h,refl:Array.from(S.refl).map(v=>+v.toFixed(3)),eye:Array.from(S.eye).map(v=>+v.toFixed(2))};})()"},
+ {"touchDrag":[[120,380],[260,380],300]},
+ {"wait":1500},
+ {"shot":"p02-playing"},
+ {"eval":"__pl85.App.core.World.autoKnit(2); 1"},
+ {"wait":12000},
+ {"eval":"(()=>{const C=__pl85.App.core;return {ex:C.World.ex,pm:C.World.pm,refl:Array.from(C.S.refl).map(v=>+v.toFixed(3))};})()"},
+ {"shot":"p03-long"}
+]
